@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function songuyento(x){
+            if(x<=1) return false
+            if( x==2) return true
+            for (var i=2;i<=Math.sqrt(x);i++){
+                if(x % i ==0){
+                    return false
+                }
+            }
+            return true;
+        }
+        function print (x){
+            if(songuyento(x)){
+                console.log("so ngto")
+            }
+            else console.log("ko phai so nguyen to")
+
+        }
+        
+        let x = prompt ("Nhap value x : ")
+        print(x)
+        
+    </script>
+    
+</body>
+</html>
